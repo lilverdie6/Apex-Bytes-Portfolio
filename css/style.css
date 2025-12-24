@@ -260,4 +260,25 @@ progress[value] {
     font-size: 0.9rem;
   }
 }
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 3px solid #00ff88;
+  box-shadow: 0 0 20px #00ff88, 0 0 40px #00cc66;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px #00ff88, 0 0 60px #00cc66;
+}
+
 
