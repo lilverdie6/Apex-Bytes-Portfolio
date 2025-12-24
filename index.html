@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Haleel Jaffar - Founder of Apex Bytes. Showcasing web, software, game development, and cybersecurity projects.">
+    <title>Apex Bytes || Portfolio</title>
+    <link rel="icon" type="image/png" href="images/Apex Bytes.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 class="site-title">Portfolio</h1>
+    <canvas id="particles"></canvas>
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
+        <p class="me">Hello, I'm <b class="size">Haleel Jaffar</b></p>
+        <h3 class="subtitle zoom-in"><b>Apex Bytes:</b> Crafting responsive websites, software, games & secure systems
+        </h3>
+        <div class="btn-group">
+            <a href="#contact" class="btn">Hire Me</a>
+            <a class="btn" href="assets/Haleel_Jaffar_CV.pdf" download>Download CV</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p class="intro">I am the founder of <b>Apex Bytes</b>, specializing in web, software, and game development plus
+            cybersecurity. Passionate about building responsive, engaging, and secure digital experiences.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="fade-in">
+        <h2>Skills</h2>
+        <ul>
+            <li class="stagger">HTML & CSS<br>
+                <progress value="92" max="100" aria-label="HTML & CSS skill level"></progress>
+            </li>
+            <li class="stagger">JavaScript<br>
+                <progress value="50" max="100" aria-label="JavaScript"></progress>
+            </li>
+            <li class="stagger">Django & Python<br>
+                <progress value="62" max="100" aria-label="Django & Python"></progress>
+            </li>
+            <li class="stagger">C++<br>
+                <progress value="34" max="100" aria-label="C++"></progress>
+            </li>
+            <li class="stagger">Laravel & PHP<br>
+                <progress value="51" max="100" aria-label="Laravel & PHP"></progress>
+            </li>
+            <li class="stagger">MySQL<br>
+                <progress value="16" max="100" aria-label="MySQL"></progress>
+            </li>
+            <li class="stagger">Cybersecurity Basics<br>
+                <progress value="10" max="100" aria-label="Cybersecurity Basics"></progress>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="fade-in zoom-in">
+        <h2>Services</h2>
+        <div class="service">
+            <h3 class="me">Web Development</h3>
+            <p class="intro">Responsive websites and web apps.</p>
+        </div>
+        <div class="service">
+            <h3 class="me">Software Development</h3>
+            <p class="intro">Custom solutions for businesses.</p>
+        </div>
+        <div class="service">
+            <h3 class="me">Game Development</h3>
+            <p class="intro">Interactive and engaging experiences.</p>
+        </div>
+        <div class="service">
+            <h3 class="me">Cybersecurity</h3>
+            <p class="intro">Secure systems and data protection.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="fade-in zoom-in">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3 class="me">SCLABE</h3>
+            <p class="intro">Science experiment simulation game for students.</p>
+            <a href="https://github.com/lilverdie6/sclabe" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3 class="me">Job Connect</h3>
+            <p class="intro">Platform connecting job seekers and employers.</p>
+            <a href="https://github.com/lilverdie6/jobconnect" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3 class="me">Legal Connect</h3>
+            <p class="intro">Platform connecting clients and lawyers.</p>
+            <a href="https://github.com/lilverdie6/legalconnect" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3 class="me">PopCorn Movies</h3>
+            <p class="intro">Website for movies and TV series.</p>
+            <a href="https://github.com/lilverdie6/popcornmovies" target="_blank">View Project</a>
+            <h3 class="me">Homeland Music Vibes</h3>
+            <p class="intro">Website for Malawian music.</p>
+            <a href="https://github.com/lilverdie6/homelandmusic" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3 class="me">EasyRide</h3>
+            <p class="intro">Laravel-based bus ticketing system.</p>
+            <a href="https://github.com/lilverdie6/easyride" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="fade-in zoom-in">
+        <h2>Contact Me</h2>
+        <p class="contact"><i class="fas fa-envelope"></i> lilverdie81@gmail.com</p>
+        <p class="contact"><i class="fab fa-whatsapp"></i> +265-990-042-397</p>
+        <p class="contact"><i class="fab fa-github"></i>
+            <a href="https://github.com/lilverdie6" target="_blank" rel="noopener noreferrer">github.com/lilverdie6</a>
+        </p>
+    </section>
+
+    <button id="scrollTopBtn" type="button" title="Go to top" aria-label="Scroll to top">⬆</button>
+
+    <!-- Scripts -->
+    <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        if (scrollBtn) {
+            const updateScrollBtnVisibility = () => {
+                scrollBtn.style.display = window.pageYOffset > 200 ? "block" : "none";
+            };
+            updateScrollBtnVisibility();
+            window.addEventListener('scroll', updateScrollBtnVisibility, { passive: true });
+            scrollBtn.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            });
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const progressBars = document.querySelectorAll("progress");
+            const animateProgress = (bar) => {
+                const value = Number(bar.getAttribute("value")) || 0;
+                let current = 0;
+                const interval = setInterval(() => {
+                    if (current >= value) clearInterval(interval);
+                    else bar.value = ++current;
+                }, 10);
+            };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateProgress(entry.target);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            progressBars.forEach(bar => observer.observe(bar));
+        });
+    </script>
+    <script>
+        (function () {
+            const faders = document.querySelectorAll('.fade-in');
+            const staggers = document.querySelectorAll('.stagger');
+            const zoomers = document.querySelectorAll('.zoom-in');
+
+            const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+
+            const appearOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) return;
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => appearOnScroll.observe(fader));
+            zoomers.forEach(zoomer => appearOnScroll.observe(zoomer));
+
+            const staggerOnScroll = new IntersectionObserver((entries, observer) => {
+                entries.forEach((entry, index) => {
+                    if (!entry.isIntersecting) return;
+                    setTimeout(() => entry.target.classList.add("visible"), index * 200);
+                    observer.unobserve(entry.target);
+                });
+            }, appearOptions);
+
+            staggers.forEach(stagger => staggerOnScroll.observe(stagger));
+        })();
+    </script>
+
+    <script>
+        const canvas = document.getElementById("particles");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const particles = [];
+        for (let i = 0; i < 60; i++) {
+            particles.push({
+                x: Math.random() * canvas.width,
+                y: Math.random() * canvas.height,
+                radius: Math.random() * 2 + 1,
+                dx: (Math.random() - 0.5) * 0.5,
+                dy: (Math.random() - 0.5) * 0.5
+            });
+        }
+
+        function drawParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+                ctx.fillStyle = "rgba(0, 255, 136, 0.7)";
+                ctx.fill();
+                p.x += p.dx;
+                p.y += p.dy;
+                if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+                if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+            });
+            requestAnimationFrame(drawParticles);
+        }
+        drawParticles();
+
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+
+</body>
+
+</html>
