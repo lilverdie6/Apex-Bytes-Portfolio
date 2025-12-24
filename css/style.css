@@ -60,6 +60,7 @@ ul {
 ul li {
   margin: 20px;
   padding: 15px;
+  color:#fff;
   font-size: 20px;
   flex: 1 1 200px;
   font-weight: lighter;
@@ -259,3 +260,4 @@ progress[value] {
     font-size: 0.9rem;
   }
 }
+
