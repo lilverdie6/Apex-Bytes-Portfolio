@@ -115,6 +115,10 @@ section {
   flex-direction: column;
 }
 
+.home {
+  min-height:80vh;
+  padding-top:40px;
+}
 h2 {
   color: #00ff88;
   font-size: 2rem;
